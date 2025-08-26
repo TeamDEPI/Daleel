@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daleel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Guide Search -->
+    <header>
+      <div
+        class="flex justify-between items-center px-10 sm:px-16 md:px-24 py-2"
+      >
+        <div>
+          <span class="font-bold text-2xl">Daleel</span>
+        </div>
+        <nav class="flex gap-5 items-center">
+          <div class="hidden lg:flex gap-5">
+            <div class="text-blue-500 cursor-pointer">Home</div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Guides
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Destinations
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Hotels
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Wallet
+            </div>
+          </div>
+
+          <div class="relative w-72 hidden xl:flex">
+            <span
+              class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Search for guides, places, hotels..."
+              class="w-full rounded-md border border-gray-300 pl-10 pr-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <!-- Buttons -->
+          <div class="hidden sm:flex space-x-2">
+            <button
+              class="border border-zinc-200 hover:text-white hover:border-blue-500 hover:bg-blue-500 py-1 px-4 rounded-md transition duration-300"
+            >
+              Login
+            </button>
+            <button
+              class="bg-blue-500 border border-blue-500 rounded-md text-white py-1 px-6 hover:bg-transparent hover:text-blue-500 transition duration-300"
+            >
+              Register
+            </button>
+          </div>
+
+          <div class="lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="bg-gray-100">
+      <div class="flex items-start py-36">
+        <!-- Left-Section -->
+        <aside class="hidden sm:block bg-white p-8 rounded-2xl w-[300px] ml-4 md:ml-24">
+          <h2 class="text-3xl">Filters</h2>
+          <div class="rating-section">
+            <div class="rating flex justify-between items-center mt-6 mb-3">
+              <h3 class="text-2xl">Rating</h3>
+              <i class="fa-solid fa-circle-chevron-down text-lg"></i>
+            </div>
+            <div class="radio flex flex-col gap-1">
+              <label for="" class="">
+                <input type="radio" />
+                <span>All</span>
+              </label>
+              <label for="" class="">
+                <input type="radio" />
+                <span
+                  ><i class="fa-regular fa-star" style="color: #ffd43b"></i> 5
+                  Stars</span
+                >
+              </label>
+              <label for="" class="">
+                <input type="radio" />
+                <span
+                  ><i class="fa-regular fa-star" style="color: #ffd43b"></i> 4+
+                  Stars</span
+                >
+              </label>
+              <label for="" class="">
+                <input type="radio" />
+                <span
+                  ><i class="fa-regular fa-star" style="color: #ffd43b"></i> 3+
+                  Stars</span
+                >
+              </label>
+            </div>
+          </div>
+
+          <div class="h-[2px] bg-gray-300 my-3"></div>
+
+          <div class="price-section">
+            <div class="rating flex justify-between items-center mt-6 mb-3">
+              <h3 class="text-2xl">Price</h3>
+              <i class="fa-solid fa-circle-chevron-down text-lg"></i>
+            </div>
+            <div class="inputs flex gap-4">
+              <div class="bg-white w-26 py-2 px-5">Min</div>
+              <div class="bg-white w-26 py-2 px-5">Max</div>
+            </div>
+          </div>
+
+          <div class="h-[2px] bg-gray-300 my-3"></div>
+
+          <div class="languages">
+            <div class="rating flex justify-between items-center mt-6 mb-3">
+              <h3 class="text-2xl">Languages Spoken</h3>
+              <i class="fa-solid fa-circle-chevron-down text-lg"></i>
+            </div>
+            <div class="radio flex flex-col gap-1">
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>All</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>English</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Spanish</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>French</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>German</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>italian</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Mandarin</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Arabic</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Japanese</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Russian</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Hindi</span>
+              </label>
+              <label for="" class="">
+                <input type="checkbox" />
+                <span>Portuguese</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="availability">
+            <div class="rating flex justify-between items-center mt-6 mb-3">
+              <h3 class="text-2xl">Availability</h3>
+              <i class="fa-solid fa-circle-chevron-down text-lg"></i>
+            </div>
+            <div class="ava flex justify-between items-center">
+              <h2>Show available guides only</h2>
+              <i
+                class="fa-solid fa-toggle-on text-4xl"
+                style="color: #74c0fc"
+              ></i>
+            </div>
+          </div>
+
+          <div class="h-[2px] bg-gray-300 my-3"></div>
+
+          <div class="button flex flex-col gap-3 mt-8">
+            <button class="bg-blue-400 text-white p-2 rounded-lg">
+              Applay Filters
+            </button>
+            <button
+              class="bg-white border border-blue-500 text-blue-500 p-2 rounded-lg"
+            >
+              Clear Filters
+            </button>
+          </div>
+        </aside>
+
+        <!-- Right-Section -->
+        <main class=" w-full">
+          <div class="flex flex-col lg:flex-row gap-5  justify-between mb-10 px-6 ">
+            <div class="font-bold text-2xl">Showing Guides</div>
+            <div class="flex items-center gap-2">
+              <h2 class="font-semibold">Sorted by:</h2>
+              <div class="border border-gray-400 rounded-md px-4 py-1">
+                Rating(High to Low)
+                <i class="fa-solid fa-circle-chevron-down text-lg"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-10 justify-center">
+            <!-- Card -->
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide1.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide2.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide3.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide4.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide5.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide6.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide7.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide8.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-200 rounded-2xl w-[300px] p-6 "
+            >
+              <img
+                class="w-full object-cover rounded-md"
+                src="./images/guide9.png"
+                alt="Profile"
+              />
+
+              <div class="mt-2 space-y-3">
+                <h2 class="text-base font-semibold text-gray-800">
+                  Sophia Miller
+                </h2>
+
+                <!-- Rating -->
+                <div class="flex items-center text-yellow-500 text-xs">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.897 1.512 8.297L12 18.896l-7.448 4.604 1.512-8.297-6.064-5.897 8.332-1.151z"
+                    />
+                  </svg>
+                  <span>5.0 (150 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <p class="text-blue-600 font-semibold text-sm">$90/day</p>
+
+                <!-- Languages -->
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >English</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >French</span
+                  >
+                  <span class="px-2 py-0.5 bg-gray-100 text-xs rounded-full"
+                    >German</span
+                  >
+                </div>
+
+                <!-- Button -->
+                <button
+                  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-1.5 rounded-lg text-sm"
+                >
+                  View Profile
+                </button>
+              </div>
+            </div>
+     
+
+
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="flex flex-col lg:flex-row gap-y-3 justify-between items-center px-36 py-2"
+      >
+        <div class="flex gap-8">
+          <div>Company</div>
+          <div>Product</div>
+          <div>Support</div>
+          <div>Legal</div>
+        </div>
+        <div class="flex gap-6">
+          <i class="fa-brands fa-facebook-f"></i
+          ><i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-linkedin-in"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
