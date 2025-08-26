@@ -93,11 +93,14 @@
         <div class="flex mb-6 border rounded overflow-hidden">
           <button
             id="loginTab"
-            class="w-1/2 py-2 text-sm font-semibold bg-gray-100"
+            class="w-1/2 py-2 text-sm font-semibold bg-gray-100 text-black"
           >
             Login
           </button>
-          <button id="registerTab" class="w-1/2 py-2 text-sm font-semibold">
+          <button
+            id="registerTab"
+            class="w-1/2 py-2 text-sm font-semibold text-gray-500"
+          >
             Register
           </button>
         </div>
@@ -119,6 +122,10 @@
                 type="password"
                 class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
               />
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between">
               <a href="#" class="ml-2 text-blue-500 text-sm hover:underline"
                 >Forgot Password?</a
               >
@@ -192,16 +199,28 @@
       const loginForm = document.getElementById("loginForm");
       const registerForm = document.getElementById("registerForm");
       loginTab.addEventListener("click", () => {
+        // loginForm.classList.remove("hidden");
+        // registerForm.classList.add("hidden");
+        // loginTab.classList.add("bg-gray-100");
+        // registerTab.classList.remove("bg-gray-100");
         loginForm.classList.remove("hidden");
         registerForm.classList.add("hidden");
-        loginTab.classList.add("bg-gray-100");
-        registerTab.classList.remove("bg-gray-100");
+
+        // active style
+        loginTab.classList.add("bg-gray-100", "text-black");
+        loginTab.classList.remove("text-gray-500");
+
+        // inactive style
+        registerTab.classList.remove("bg-gray-100", "text-black");
+        registerTab.classList.add("text-gray-500");
       });
       registerTab.addEventListener("click", () => {
         registerForm.classList.remove("hidden");
         loginForm.classList.add("hidden");
-        registerTab.classList.add("bg-gray-100");
-        loginTab.classList.remove("bg-gray-100");
+        registerTab.classList.add("bg-gray-100", "text-black");
+        registerTab.classList.remove("text-gray-500");
+        loginTab.classList.remove("bg-gray-100", "text-black");
+        loginTab.classList.add("text-gray-500");
       });
     </script>
   </body>
