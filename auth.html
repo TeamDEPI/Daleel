@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourismTech - Auth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-white text-gray-800 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <header>
+      <div
+        class="flex justify-between items-center px-10 sm:px-16 md:px-24 py-2"
+      >
+        <div>
+          <span class="font-bold text-2xl">Daleel</span>
+        </div>
+        <nav class="flex gap-5 items-center">
+          <div class="hidden lg:flex gap-5">
+            <div class="text-blue-500 cursor-pointer">Home</div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Guides
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Destinations
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Hotels
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Wallet
+            </div>
+          </div>
+
+          <div class="relative w-72 hidden xl:flex">
+            <span
+              class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Search for guides, places, hotels..."
+              class="w-full rounded-md border border-gray-300 pl-10 pr-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <!-- Buttons -->
+          <div class="hidden sm:flex space-x-2">
+            <button
+              class="border border-zinc-200 hover:text-white hover:border-blue-500 hover:bg-blue-500 py-1 px-4 rounded-md transition duration-300"
+            >
+              Login
+            </button>
+            <button
+              class="bg-blue-500 border border-blue-500 rounded-md text-white py-1 px-6 hover:bg-transparent hover:text-blue-500 transition duration-300"
+            >
+              Register
+            </button>
+          </div>
+
+          <div class="lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Auth Card -->
+    <main class="flex flex-1 justify-center items-center px-4">
+      <div class="w-full max-w-md bg-white border rounded-lg shadow p-8">
+        <h2 class="text-2xl font-bold text-center">Welcome to TourismTech!</h2>
+        <p class="text-center text-gray-500 mb-6">
+          Login or Register to start your journey.
+        </p>
+
+        <!-- Tabs -->
+        <div class="flex mb-6 border rounded overflow-hidden">
+          <button
+            id="loginTab"
+            class="w-1/2 py-2 text-sm font-semibold bg-gray-100 text-black"
+          >
+            Login
+          </button>
+          <button
+            id="registerTab"
+            class="w-1/2 py-2 text-sm font-semibold text-gray-500"
+          >
+            Register
+          </button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input
+              type="email"
+              placeholder="your@example.com"
+              class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Password</label>
+            <div class="flex items-center justify-between">
+              <input
+                type="password"
+                class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between">
+              <a href="#" class="ml-2 text-blue-500 text-sm hover:underline"
+                >Forgot Password?</a
+              >
+            </div>
+          </div>
+          <button
+            class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          >
+            Login
+          </button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="registerForm" class="space-y-4 hidden">
+          <div>
+            <label class="block text-sm font-medium mb-1">Full Name</label>
+            <input
+              type="text"
+              placeholder="John Doe"
+              class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input
+              type="email"
+              placeholder="your@example.com"
+              class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Password</label>
+            <input
+              type="password"
+              class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+            />
+          </div>
+          <button
+            class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="flex flex-col lg:flex-row gap-y-3 justify-between items-center px-36 py-2"
+      >
+        <div class="flex gap-8">
+          <div>Company</div>
+          <div>Product</div>
+          <div>Support</div>
+          <div>Legal</div>
+        </div>
+        <div class="flex gap-6">
+          <i class="fa-brands fa-facebook-f"></i
+          ><i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-linkedin-in"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const loginTab = document.getElementById("loginTab");
+      const registerTab = document.getElementById("registerTab");
+      const loginForm = document.getElementById("loginForm");
+      const registerForm = document.getElementById("registerForm");
+      loginTab.addEventListener("click", () => {
+        // loginForm.classList.remove("hidden");
+        // registerForm.classList.add("hidden");
+        // loginTab.classList.add("bg-gray-100");
+        // registerTab.classList.remove("bg-gray-100");
+        loginForm.classList.remove("hidden");
+        registerForm.classList.add("hidden");
+
+        // active style
+        loginTab.classList.add("bg-gray-100", "text-black");
+        loginTab.classList.remove("text-gray-500");
+
+        // inactive style
+        registerTab.classList.remove("bg-gray-100", "text-black");
+        registerTab.classList.add("text-gray-500");
+      });
+      registerTab.addEventListener("click", () => {
+        registerForm.classList.remove("hidden");
+        loginForm.classList.add("hidden");
+        registerTab.classList.add("bg-gray-100", "text-black");
+        registerTab.classList.remove("text-gray-500");
+        loginTab.classList.remove("bg-gray-100", "text-black");
+        loginTab.classList.add("text-gray-500");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <div
+        class="flex justify-between items-center px-10 sm:px-16 md:px-24 py-2"
+      >
+        <div>
+          <span class="font-bold text-2xl">Daleel</span>
+        </div>
+        <nav class="flex gap-5 items-center">
+          <div class="hidden lg:flex gap-5">
+            <div class="text-blue-500 cursor-pointer">Home</div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Guides
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Destinations
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Hotels
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Wallet
+            </div>
+          </div>
+
+          <div class="relative w-72 hidden xl:flex">
+            <span
+              class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Search for guides, places, hotels..."
+              class="w-full rounded-md border border-gray-300 pl-10 pr-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <!-- Buttons -->
+          <div class="hidden sm:flex space-x-2">
+            <a href="auth.html" 
+              class="border border-zinc-200 hover:text-white hover:border-blue-500 hover:bg-blue-500 py-1 px-4 rounded-md transition duration-300"
+            >
+              Login
+            </a>
+            <a href="auth.html" 
+              class="bg-blue-500 border border-blue-500 rounded-md text-white py-1 px-6 hover:bg-transparent hover:text-blue-500 transition duration-300"
+            >
+              Register
+            </a>
+          </div>
+
+          <div class="lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gray-100">
+      <div
+        class="flex flex-col lg:flex-row gap-y-10 justify-between items-center lg:px-12 xl:px-40 2xl:px-72 py-28"
+      >
+        <div class="w-[400px] space-y-10">
+          <h2 class="font-bold text-blue-500 text-4xl">
+            Discover Egypt with Local Guides & Seamless Travel
+          </h2>
+          <p>
+            Your ultimate platform for booking personalized tours, reliable
+            transportation, and the best hotels in Egypt. Connect with local
+            experts and create unforgettable memories.
+          </p>
+          <div class="flex gap-2">
+            <input
+              type="text"
+              placeholder="Search for guides, places, hotels..."
+              class="w-full rounded-md border border-gray-300 pl-10 pr-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <button class="bg-blue-500 text-white px-3 rounded-md">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="font-semibold">
+            <button
+              class="bg-blue-500 border border-blue-500 rounded-md text-white py-1 px-6 hover:bg-transparent hover:text-blue-500 transition duration-300"
+            >
+              Register as Guide
+            </button>
+            <button
+              class="text-blue-500 border border-blue-500 hover:text-white hover:border-blue-500 hover:bg-blue-500 py-1 px-6 rounded-md transition duration-300"
+            >
+              Register as Traveler
+            </button>
+          </div>
+        </div>
+        <div class="w-[400px] lg:w-[600px]">
+          <img src="images/hero-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Places -->
+    <section>
+      <div class="py-28 space-y-24">
+        <h2 class="flex justify-center text-center font-bold text-3xl">
+          Popular Tourist Places in Egypt
+        </h2>
+        <div class="flex flex-wrap gap-10 justify-center">
+          <div
+            class="flex flex-col gap-4 w-60 rounded-md border border-zinc-100"
+          >
+            <img
+              src="images/places-img1.png"
+              class="rounded-xl w-full"
+              alt=""
+            />
+            <div class="flex flex-col gap-4 p-2">
+              <h2 class="font-bold text-xl">Pyramids of Giza</h2>
+              <p class="text-sm">
+                Explore the ancient wonders of the world, including the Great
+                Pyramid and the Sphinx, symbols of Egypt’s rich history.
+              </p>
+              <a
+                href=""
+                class="border border-zinc-200 px-6 text-center w-[80%] mx-auto rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
+                >View Details</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 w-60 rounded-md border border-zinc-100"
+          >
+            <img
+              src="images/places-img2.png"
+              class="rounded-xl w-full"
+              alt=""
+            />
+            <div class="flex flex-col gap-4 p-2">
+              <h2 class="font-bold text-xl">Nile River Cruise</h2>
+              <p class="text-sm">
+                Explore the ancient wonders of the world, including the Great
+                Pyramid and the Sphinx, symbols of Egypt’s rich history.
+              </p>
+              <a
+                href=""
+                class="border border-zinc-200 px-6 text-center w-[80%] mx-auto rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
+                >View Details</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 w-60 rounded-md border border-zinc-100"
+          >
+            <img
+              src="images/places-img3.png"
+              class="rounded-xl w-full"
+              alt=""
+            />
+            <div class="flex flex-col gap-4 p-2">
+              <h2 class="font-bold text-xl">Khan el-Khalili Bazaar</h2>
+              <p class="text-sm">
+                Explore the ancient wonders of the world, including the Great
+                Pyramid and the Sphinx, symbols of Egypt’s rich history.
+              </p>
+              <a
+                href=""
+                class="border border-zinc-200 px-6 text-center w-[80%] mx-auto rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
+                >View Details</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 w-60 rounded-md border border-zinc-100"
+          >
+            <img
+              src="images/places-img4.png"
+              class="rounded-xl w-full"
+              alt=""
+            />
+            <div class="flex flex-col gap-4 p-2">
+              <h2 class="font-bold text-xl">Luxor Temple</h2>
+              <p class="text-sm">
+                Explore the ancient wonders of the world, including the Great
+                Pyramid and the Sphinx, symbols of Egypt’s rich history.
+              </p>
+              <a
+                href=""
+                class="border border-zinc-200 px-6 text-center w-[80%] mx-auto rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel Pachages -->
+    <section class="bg-zinc-100">
+      <div class="py-28 space-y-24">
+        <h2 class="flex justify-center text-center font-bold text-3xl">
+          Popular Tourist Places in Egypt
+        </h2>
+        <div class="flex flex-wrap justify-center gap-10">
+          <div class="w-60 bg-white text-center rounded-md p-6 space-y-2">
+            <img src="images/features-icon1.png" class="mx-auto" alt="" />
+            <h3 class="font-semibold">Private Transfers</h3>
+            <p class="text-sm">
+              Comfortable, air-conditioned cars with professional drivers for
+              seamless travel.
+            </p>
+          </div>
+          <div class="w-60 bg-white text-center rounded-md p-6 space-y-2">
+            <img src="images/features-icon2.png" class="mx-auto" alt="" />
+            <h3 class="font-semibold">Domestic Flights</h3>
+            <p class="text-sm">
+              Quick and efficient air travel to connect major Egyptian cities
+              and attractions.
+            </p>
+          </div>
+          <div class="w-60 bg-white text-center rounded-md p-6 space-y-2">
+            <img src="images/features-icon3.png" class="mx-auto" alt="" />
+            <h3 class="font-semibold">Nile Felucca Rides</h3>
+            <p class="text-sm">
+              Traditional sailboats offer unique and relaxing journeys along the
+              historic Nile.
+            </p>
+          </div>
+          <div class="w-60 bg-white text-center rounded-md p-6 space-y-2">
+            <img src="images/features-icon4.png" class="mx-auto" alt="" />
+            <h3 class="font-semibold">Hotel Shuttles</h3>
+            <p class="text-sm">
+              Convenient shuttle services connecting you from airports to your
+              accommodation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <div class="py-28 space-y-24">
+        <h2 class="flex justify-center text-center font-bold text-3xl">
+          Popular Tourist Places in Egypt
+        </h2>
+        <div class="flex flex-wrap justify-center gap-10">
+          <div class="w-72 border rounded-lg overflow-hidden">
+            <!-- Image -->
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+              alt="Hotel"
+              class="h-40 w-full object-cover"
+            />
+
+            <!-- Content -->
+            <div class="p-4 text-center">
+              <!-- Stars -->
+              <div class="flex justify-center mb-2 text-yellow-500">
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Empty Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="font-semibold text-lg">Nile View Retreat</h3>
+
+              <!-- Price -->
+              <p class="text-blue-600 font-bold">$250/night</p>
+
+              <!-- Button -->
+              <button
+                class="mt-3 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="w-72 border rounded-lg overflow-hidden">
+            <!-- Image -->
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+              alt="Hotel"
+              class="h-40 w-full object-cover"
+            />
+
+            <!-- Content -->
+            <div class="p-4 text-center">
+              <!-- Stars -->
+              <div class="flex justify-center mb-2 text-yellow-500">
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Empty Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="font-semibold text-lg">Nile View Retreat</h3>
+
+              <!-- Price -->
+              <p class="text-blue-600 font-bold">$250/night</p>
+
+              <!-- Button -->
+              <button
+                class="mt-3 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="w-72 border rounded-lg overflow-hidden">
+            <!-- Image -->
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+              alt="Hotel"
+              class="h-40 w-full object-cover"
+            />
+
+            <!-- Content -->
+            <div class="p-4 text-center">
+              <!-- Stars -->
+              <div class="flex justify-center mb-2 text-yellow-500">
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Empty Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="font-semibold text-lg">Nile View Retreat</h3>
+
+              <!-- Price -->
+              <p class="text-blue-600 font-bold">$250/night</p>
+
+              <!-- Button -->
+              <button
+                class="mt-3 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="w-72 border rounded-lg overflow-hidden">
+            <!-- Image -->
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+              alt="Hotel"
+              class="h-40 w-full object-cover"
+            />
+
+            <!-- Content -->
+            <div class="p-4 text-center">
+              <!-- Stars -->
+              <div class="flex justify-center mb-2 text-yellow-500">
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Full Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+                <!-- Empty Star -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.785.57-1.84-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.95-.69l1.287-3.967z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="font-semibold text-lg">Nile View Retreat</h3>
+
+              <!-- Price -->
+              <p class="text-blue-600 font-bold">$250/night</p>
+
+              <!-- Button -->
+              <button
+                class="mt-3 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="bg-blue-500">
+      <div
+        class="flex flex-col justify-center items-center text-center gap-6 p-20 sm:p-20 md:p-36 text-white"
+      >
+        <h2 class="font-bold text-4xl sm:w-[500px] md:w-[700px]">
+          Become a Part of the TourismTech Community
+        </h2>
+        <p>
+          Whether you're an experienced guide or an eager traveler, join us to
+          unlock new opportunities and unforgettable adventures.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-5">
+          <button
+            class="bg-white text-black border border-blue-500 hover:text-white hover:border-blue-700 hover:bg-blue-700 py-1 px-6 rounded-md transition duration-300"
+          >
+            Register as Traveler
+          </button>
+          <button
+            class="bg-white text-black border border-blue-500 hover:text-white hover:border-blue-700 hover:bg-blue-700 py-1 px-6 rounded-md transition duration-300"
+          >
+            Register as Traveler
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="flex flex-col lg:flex-row gap-y-3 justify-between items-center px-36 py-2"
+      >
+        <div class="flex gap-8">
+          <div>Company</div>
+          <div>Product</div>
+          <div>Support</div>
+          <div>Legal</div>
+        </div>
+        <div class="flex gap-6">
+          <i class="fa-brands fa-facebook-f"></i
+          ><i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-linkedin-in"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
