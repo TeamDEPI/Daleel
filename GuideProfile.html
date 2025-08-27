@@ -1,0 +1,281 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guide Profile — Elena Petrova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body class="bg-slate-50 text-slate-800">
+    <div class="min-h-screen">
+        <header>
+        <div class="flex justify-between items-center px-10 sm:px-16 md:px-24 py-2">
+            <div>
+            <span class="font-bold text-2xl">Daleel</span>
+            </div>
+            <nav class="flex gap-5 items-center">
+            <div class="hidden lg:flex gap-5">
+                <div class="text-blue-500 cursor-pointer">Home</div>
+                <div
+                class="hover:text-blue-500 cursor-pointer transition duration-300"
+                >
+                Guides
+                </div>
+                <div
+                class="hover:text-blue-500 cursor-pointer transition duration-300"
+                >
+                Destinations
+                </div>
+                <div
+                class="hover:text-blue-500 cursor-pointer transition duration-300"
+                >
+                Hotels
+                </div>
+                <div
+                class="hover:text-blue-500 cursor-pointer transition duration-300"
+                >
+                Wallet
+                </div>
+            </div>
+
+            <div class="relative w-72 hidden xl:flex">
+                <span
+                class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
+                >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                type="text"
+                placeholder="Search for guides, places, hotels..."
+                class="w-full rounded-md border border-gray-300 pl-10 pr-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+            </div>
+
+            <!-- Buttons -->
+            <div class="hidden sm:flex space-x-2">
+                <button
+                class="border border-zinc-200 hover:text-white hover:border-blue-500 hover:bg-blue-500 py-1 px-4 rounded-md transition duration-300"
+                >
+                Login
+                </button>
+                <button
+                class="bg-blue-500 border border-blue-500 rounded-md text-white py-1 px-6 hover:bg-transparent hover:text-blue-500 transition duration-300"
+                >
+                Register
+                </button>
+            </div>
+
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </nav>
+        </div>
+        </header>
+
+        <main>
+            
+        <!-- Content container -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-6 sm:py-8">
+            <!-- black header area with title -->
+        
+
+            <!-- main grid: left column + right content -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- left column (cards stacked) -->
+            <aside class="lg:col-span-3 space-y-6">
+                <!-- profile card -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 text-center shadow-sm">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Elena" class="h-20 w-20 sm:h-24 sm:w-24 rounded-full mx-auto object-cover ring-1 ring-slate-100">
+                <h2 class="mt-3 sm:mt-4 font-semibold text-slate-900 text-base sm:text-lg">Elena Petrova</h2>
+                <div class="text-xs text-slate-500 mt-1">Experienced Cultural Tour Guide in Rome</div>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium hover:bg-slate-50">
+                    Contact Guide
+                </button>
+                </div>
+
+                <!-- intro video card -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+                <div class="text-sm font-semibold text-slate-900 mb-3">Introduction to Rome with Elena</div>
+                <div class="h-36 rounded-lg bg-slate-100 flex items-center justify-center">
+                    <svg class="h-10 w-10 text-slate-300" viewBox="0 0 24 24" fill="none"><path d="M5 3v18l15-9L5 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                </div>
+
+                <!-- quick facts small card -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+                <div class="text-sm font-semibold text-slate-900 mb-3">Quick Facts</div>
+                <div class="space-y-3">
+                    <div class="flex justify-between text-sm">
+                    <div class="text-slate-500">Tours Led</div>
+                    <div class="font-bold text-slate-900">500+</div>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                    <div class="text-slate-500">Years Experience</div>
+                    <div class="font-bold text-slate-900">10</div>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                    <div class="text-slate-500">Happy Tourists</div>
+                    <div class="font-bold text-slate-900">99%</div>
+                    </div>
+                </div>
+                </div>
+            </aside>
+
+            <!-- right column (main cards) -->
+            <section class="lg:col-span-9 space-y-6">
+                <!-- top row: about + languages + specialties -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- About (spans 2 columns on large) -->
+                <div class="lg:col-span-2 bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                    <h3 class="text-lg font-bold">About Elena Petrova</h3>
+                    </div>
+                    <p class="mt-3 text-slate-700 text-sm sm:text-base">Hello, I'm Elena, a passionate historian and licensed tour guide deeply in love with the eternal city of Rome. For over 10 years, I’ve had the privilege of sharing Rome’s incredible history, art, and vibrant culture with visitors from all over the world. My tours are designed to be immersive, engaging, and tailored to your interests, whether you’re a first-time visitor or a seasoned traveler looking for hidden gems. Let’s explore Rome’s iconic landmarks, ancient ruins, and charming alleyways together, uncovering stories that bring the past to life!</p>
+                </div>
+
+                <!-- Languages -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm">
+                    <h4 class="font-semibold text-slate-900">Languages Spoken</h4>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">English</span>
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">Italian</span>
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">Spanish</span>
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">French</span>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Tour specialties (under languages) -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm">
+                <h4 class="font-semibold text-slate-900">Tour Specialties</h4>
+                <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">Archaeology</span>
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">Art History</span>
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">Food & Wine</span>
+                    <span class="inline-flex items-center rounded-full bg-indigo-50 text-indigo-700 px-3 py-1 text-sm font-medium ring-1 ring-indigo-100">Architecture</span>
+                </div>
+                </div>
+
+                <!-- Reviews card -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-lg font-semibold">Verified Reviews (285)</div>
+                    </div>
+                    <div class="flex items-center gap-3 mt-2 text-sm text-slate-600">
+                        <div class="flex items-center gap-2">
+                        <div class="text-2xl font-bold text-sky-600">4.9</div>
+                        <div class="flex text-amber-400">
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <div class="text-slate-500">(285 reviews)</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <button class="text-sm text-indigo-600 font-medium hover:underline">View All Reviews</button>
+                    </div>
+                </div>
+
+                <div class="mt-6 space-y-4">
+                    <!-- review 1 -->
+                    <article class="flex items-start gap-4">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" class="h-10 w-10 rounded-full object-cover" alt="">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                        <div class="font-semibold">Sarah M.</div>
+                        <div class="flex text-amber-400">
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        </div>
+                        <p class="mt-2 text-slate-700 text-sm">Elena made our Rome trip unforgettable! Her knowledge of ancient history was incredible, and she brought the Colosseum to life. Highly recommend!</p>
+                    </div>
+                    </article>
+
+                    <!-- review 2 -->
+                    <article class="flex items-start gap-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="h-10 w-10 rounded-full object-cover" alt="">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                        <div class="font-semibold">David L.</div>
+                        <div class="flex text-amber-400">
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        </div>
+                        <p class="mt-2 text-slate-700 text-sm">The food tour with Elena was a highlight! She showed us the best local spots and shared fascinating stories about each dish. A true local experience.</p>
+                    </div>
+                    </article>
+
+                    <!-- review 3 -->
+                    <article class="flex items-start gap-4">
+                    <img src="https://randomuser.me/api/portraits/women/31.jpg" class="h-10 w-10 rounded-full object-cover" alt="">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                        <div class="font-semibold">Maria P.</div>
+                        <div class="flex text-amber-400">
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        </div>
+                        <p class="mt-2 text-slate-700 text-sm">Elena was very passionate and knowledgeable. We enjoyed our Vatican tour, though it was quite long. She managed the group well.</p>
+                    </div>
+                    </article>
+                </div>
+
+                <div class="mt-6">
+                    <button class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-slate-50 border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">View All Reviews</button>
+                </div>
+                </div>
+
+                <!-- bottom CTA -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm">
+                <button class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-sky-600 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-700">Check Availability & Book</button>
+                </div>
+            </section>
+            </div>
+
+            <!-- footer -->
+    <footer>
+    <div class="flex flex-col lg:flex-row gap-y-3 justify-between items-center px-36 py-2">
+        <div class="flex gap-8">
+        <div>Company</div>
+        <div>Product</div>
+        <div>Support</div>
+        <div>Legal</div>
+        </div>
+        <div class="flex gap-6">
+        <i class="fa-brands fa-facebook-f"></i
+        ><i class="fa-brands fa-twitter"></i
+        ><i class="fa-brands fa-instagram"></i
+        ><i class="fa-brands fa-linkedin-in"></i
+        ><i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+    </footer>
+        </div>
+        </main>
+    </div>
+    </body>
+    </html>
