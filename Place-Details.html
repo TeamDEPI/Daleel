@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Place Details</title>
+</head>
+<body>
+<header>
+      <div class="flex justify-between items-center px-10 sm:px-16 md:px-24 py-2">
+        <div>
+          <span class="font-bold text-2xl">Daleel</span>
+        </div>
+        <nav class="flex gap-5 items-center">
+          <div class="hidden lg:flex gap-5">
+            <div class="text-blue-500 cursor-pointer">Home</div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Guides
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Destinations
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Hotels
+            </div>
+            <div
+              class="hover:text-blue-500 cursor-pointer transition duration-300"
+            >
+              Wallet
+            </div>
+          </div>
+
+          <div class="relative w-72 hidden xl:flex">
+            <span
+              class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Search for guides, places, hotels..."
+              class="w-full rounded-md border border-gray-300 pl-10 pr-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+
+          <div class="hidden sm:flex space-x-2">
+            <button
+              class="border border-zinc-200 hover:text-white hover:border-blue-500 hover:bg-blue-500 py-1 px-4 rounded-md transition duration-300"
+            >
+              Login
+            </button>
+            <button
+              class="bg-blue-500 border border-blue-500 rounded-md text-white py-1 px-6 hover:bg-transparent hover:text-blue-500 transition duration-300"
+            >
+              Register
+            </button>
+          </div>
+
+          <div class="lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+<div class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-32 overflow-x-clip ">
+  <div class="flex justify-center">
+    <img src="./images/Karnak.jpeg" loading="lazy" class="rounded-md shadow-lg w-full h-80 md:h-[420px] object-cover">
+  </div>
+
+ 
+  <div class="space-y-5">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Karnak Temple</h1>
+    
+
+    <p class="text-gray-500 flex items-center text-md lg:text-2xl">
+      <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+    Luxor, Egypt</p>
+
+  
+    <div class="flex items-center space-x-3">
+      <div class="text-yellow-400 text-xl">★★★★★</div>
+      <span class="text-gray-600 text-lg">(2450 Reviews)</span>
+    </div>
+
+    <p class="text-gray-700 leading-relaxed text-base md:text-lg overflow-x-clip">
+       The Karnak Temple Complex, located in Luxor, Egypt, is one of the largest 
+  and most impressive religious sites ever built. Dedicated primarily to 
+  the Theban gods, especially Amun-Ra, the temple features massive columns, 
+  intricately carved hieroglyphs, and towering obelisks. 
+  Spanning over 2,000 years of construction, Karnak stands as a breathtaking 
+  symbol of ancient Egyptian power, faith, and architectural mastery.
+    </p>
+
+
+    <button class="bg-blue-600 text-white px-8 py-3 rounded-xl shadow-md hover:bg-blue-700 transition cursor-pointer">
+      Book Your Adventure
+    </button>
+  </div>
+</div>
+
+
+
+
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center p-6 sm:p-12 md:p-24 bg-gray-100 overflow-x-hidden">
+  <div class="space-y-5">
+    <h1 class="text-2xl md:text-4xl font-bold text-gray-900 overflow-x-clip">About Karnak Temple</h1>
+    <p class="overflow-x-clip">The Karnak Temple Complex, located in the heart of Luxor, Egypt,
+      is one of the most magnificent and awe-inspiring monuments of the ancient world.
+      Unlike a single temple, Karnak is a vast open-air museum made up of sanctuaries,
+      pylons, chapels, and towering columns that were constructed and expanded by more than 
+      30 pharaohs over a period of nearly 2,000 years.
+      This remarkable timeline makes Karnak not only the largest religious complex ever built,
+      but also a living archive of ancient Egyptian history, culture, and devotion</p>
+    <p class="overflow-x-clip">Dedicated primarily to the Theban Triad of gods—Amun-Ra, Mut, and Khonsu—Karnak was the spiritual heart of the New Kingdom.
+      The centerpiece, the Great Hypostyle Hall, is an architectural masterpiece with 134 colossal columns arranged in 16 rows, some reaching heights of over 20 meters. These pillars,
+       covered with intricate hieroglyphs and reliefs, stand as eternal witnesses to the artistic brilliance and engineering mastery of ancient Egyptians.</p>
+
+    <h2 class="text-xl md:text-3xl font-bold text-gray-900">Highlights & Amenities</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+      <div class="flex items-center space-x-3 bg-gray-100 px-4 py-3 rounded-full shadow-sm w-full">
+        <i class="fas fa-university text-blue-300"></i>
+        <span class="text-gray-700 text-md">Great Hypostyle Hall</span>
+      </div>
+
+
+      <div class="flex items-center space-x-3 bg-gray-100 px-4 py-3 rounded-full shadow-sm w-full">
+        <i class="fas fa-water text-blue-300"></i>
+        <span class="text-gray-700 text-md">Sacred Lake</span>
+      </div>
+
+
+      <div class="flex items-center space-x-3 bg-gray-100 px-4 py-3 rounded-full shadow-sm w-full">
+        <i class="fas fa-monument text-blue-300"></i>
+        <span class="text-gray-700 text-md">Towering Obelisks</span>
+      </div>
+
+
+      <div class="flex items-center space-x-3 bg-gray-100 px-4 py-3 rounded-full shadow-sm w-full">
+        <i class="fas fa-lightbulb text-blue-300"></i>
+        <span class="text-gray-700 text-md">Sound & Light Show</span>
+      </div>
+    </div>
+  </div>
+
+<div class="bg-white rounded-2xl shadow-md p-6 min-h-[320px]">
+  <h2 class="text-lg md:text-2xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-2">Quick Facts</h2>
+
+  <div class="grid grid-cols-1 gap-3">
+
+    <div class="flex justify-between items-center bg-gray-50 px-3 py-2 rounded-lg shadow-sm min-w-0">
+      <p class="font-semibold text-gray-700 ">Established:</p>
+      <span class="text-gray-600 truncate">2000 BC</span>
+    </div>
+
+    <div class="flex justify-between items-center bg-gray-50 px-3 py-2 rounded-lg shadow-sm min-w-0">
+      <p class="font-semibold text-gray-700 ">Entry Fee:</p>
+      <span class="text-gray-600 truncate">$15 USD</span>
+    </div>
+
+    <div class="flex justify-between items-center bg-gray-50 px-3 py-2 rounded-lg shadow-sm min-w-0">
+      <p class="font-semibold text-gray-700 ">Best Time:</p>
+      <span class="text-gray-600 truncate">Winter</span>
+    </div>
+
+    <div class="flex justify-between items-center bg-gray-50 px-3 py-2 rounded-lg shadow-sm min-w-0">
+      <p class="font-semibold text-gray-700 ">Open Hours:</p>
+      <span class="text-gray-600 truncate">6:00 AM - 5:00 PM</span>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<section class="max-w-7xl mx-auto px-6 sm:px-36 py-12 overflow-x-hidden">
+  <div class="px-2 sm:px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8">Nearby Hotels</h2>
+  </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/Al Moudira Hotel _ An Oasis of Tranquility _ Luxor, Egypt.jpeg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">Sakura Inn & Spa</h3>
+        <div class="text-blue-500 mb-1">★★★★★</div>
+        <p class="text-sm text-gray-600 flex-grow">Traditional Japanese inn with modern amenities.</p>
+        <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-lg">150$/night</span>
+        <button class="border border-gray-300 px-3 py-1 text-sm rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+
+        <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/J-oyREq_.jpeg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">Modern Capsule Hotel</h3>
+        <div class="text-blue-500 mb-1">★★★★★</div>
+        <p class="text-sm text-gray-600 flex-grow">Compact and efficient stay for solo travelers.</p>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-lg">80$/night</span>
+        <button class="border border-gray-300 px-3 py-1 text-sm rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+    
+        <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/sonesta-st-george-hotel.jpg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">Riverside Grand Hotel</h3>
+        <div class="text-blue-500 mb-1">★★★★★</div>
+        <p class="text-sm text-gray-600 flex-grow">Luxury hotel with scenic river views and gourment dining.</p>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-lg">300$/night</span>
+        <button class="border border-gray-300 px-3 py-1 text-sm rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+    
+
+        <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/hilton.jpg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">Hilton hotel</h3>
+        <div class="text-blue-500 mb-1">★★★★★</div>
+        <p class="text-sm text-gray-600 flex-grow">Global hospitality leader with luxury hotel experiences.</p>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-lg">200$/night</span>
+        <button class="border border-gray-300 px-3 py-1 text-sm rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+    
+
+</div>
+
+</section>
+
+<section class="max-w-6xl mx-auto grid grid-cols-1 gap-10 items-center p-6 sm:p-12 md:p-24 bg-gray-100 overflow-x-hidden">
+   <div class="px-2 sm:px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8">Popular Restaurants</h2>
+  </div>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/japanese-and-asian-food.jpg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">Miyako Restaurant</h3>
+        <p class="text-sm text-gray-600 flex-grow"><i class="fa-solid fa-utensils"></i>  Japanese Cuisine.</p>
+        <div class="text-blue-500 mb-1 text-xl">★★★★★</div>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-md">$30/person</span>
+        <button class="border border-gray-300 px-4 py-1 text-[12px] rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+
+        <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/el-kababgy-luxor.jpg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">El kababgy luxor</h3>
+        <p class="text-sm text-gray-600 flex-grow"><i class="fa-solid fa-utensils"></i>  Mediterranean, Grill.</p>
+        <div class="text-blue-500 mb-1 text-xl">★★★★★</div>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-md">$20/person</span>
+        <button class="border border-gray-300 px-3 py-1 text-[12px] rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+    
+        <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden">
+     <img src="images/taste-the-oriental-atmosphere.jpg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">EL-Tarboush</h3>
+        <p class="text-sm text-gray-600 flex-grow"><i class="fa-solid fa-utensils"></i>  Luxury hotel.</p>
+        <div class="text-blue-500 mb-1 text-xl">★★★★★</div>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-md">$30/person</span>
+        <button class="border border-gray-300 px-3 py-1 text-[12px] rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+    
+
+        <div class="bg-white rounded-lg flex flex-col shadow border-gray-200 overflow-hidden w-full">
+     <img src="images/caption.jpg" alt="" class="w-full h-48 object-cover">
+     <div class="p-4 flex flex-col flex-grow">
+        <h3 class="font-bold text-lg mb-1">Aisha Restaurant</h3>
+         <p class="text-sm text-gray-600 flex-grow"> <i class="fa-solid fa-utensils"></i>  Lebanese, Mediterranean.</p>
+        <div class="text-blue-500 mb-1 text-xl">★★★★★</div>
+         <hr class="border-t border-gray-300 my-4"/>
+    <div class="mt-4 flex justify-between items-center">
+        <span class="text-blue-500 font-bold text-md">$40/person</span>
+        <button class="border border-gray-300 px-3 py-1 text-[12px] rounded hover:bg-gray-100 transition hover:cursor-pointer">view details</button>
+        </div>
+     </div>
+    </div>
+</div>
+
+
+
+</section>
+
+
+<section class="max-w-7xl mx-auto px-6 sm:px-36 py-12 overflow-x-hidden">
+<div class="px-2 sm:px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8">Transport Options</h2>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+<div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden p-4 flex items-start space-x-10 max-w-md py-6">
+
+  <div class="text-blue-500 pt-1 pl-3.5">
+    <i class="fa-solid fa-bus-simple text-3xl"></i>
+  </div>
+
+  <div class="flex-1 space-y-2">
+    <h1 class="text-xl font-bold text-gray-900">Public Transport</h1>
+    <p class="text-md text-gray-600 leading-snug">
+      Extensive bus and train network connects to all major attractions.
+    </p>
+    <button class="text-md text-blue-500 hover:text-blue-700 transition hover:underline">
+      View Schedules
+    </button>
+  </div>
+</div>
+
+<div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden p-4 flex items-start space-x-10 max-w-md py-6">
+
+  <div class="text-blue-500 pt-1 pl-3.5">
+    <i class="fa-solid fa-car text-3xl"></i>
+  </div>
+
+  <div class="flex-1 space-y-2">
+    <h1 class="text-xl font-bold text-gray-900">Car Rental</h1>
+    <p class="text-md text-gray-600 leading-snug">
+      Rent a car for flexible exploration outside the city center.
+    </p>
+    <button class="text-md text-blue-500 hover:text-blue-700 transition hover:underline">
+      View Schedules
+    </button>
+  </div>
+</div>
+
+<div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden p-4 flex items-start space-x-10 max-w-md py-6">
+
+  <div class="text-blue-500 pt-1 pl-3.5">
+    <i class="fa-solid fa-plane text-3xl"></i>
+  </div>
+
+  <div class="flex-1 space-y-2">
+    <h1 class="text-xl font-bold text-gray-900">Taxi & Ride-sharing</h1>
+    <p class="text-md text-gray-600 leading-snug">
+     Convenient and quick for direct routes within the city, during peak hours.
+    </p>
+    <button class="text-md text-blue-500 hover:text-blue-700 transition hover:underline">
+      View Schedules
+    </button>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+    <footer>
+      <div class="flex flex-col lg:flex-row gap-y-3 justify-between items-center px-36 py-2">
+        <div class="flex gap-8">
+          <div>Company</div>
+          <div>Product</div>
+          <div>Support</div>
+          <div>Legal</div>
+        </div>
+        <div class="flex gap-6">
+          <i class="fa-brands fa-facebook-f"></i
+          ><i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-linkedin-in"></i
+          ><i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  window.addEventListener("click", (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+    }
+  });
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
