@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daleel - Explore the World</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="absolute w-full z-10 text-white p-6">
+      <div class="flex justify-between items-center px-60">
+        <a href="index.html" class="w-28">
+          <img src="images/home/Daleel-Logo.png" alt="" />
+        </a>
+        <nav class="flex gap-10 font-semibold rounded-full px-5 py-1">
+          <a
+            href=""
+            class="group relative inline-block transition duration-300"
+          >
+            <span
+              class="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"
+            ></span
+            ><span>Home</span></a
+          >
+          <a
+            href=""
+            class="group relative inline-block transition duration-300"
+          >
+            <span
+              class="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"
+            ></span
+            ><span>Destination</span></a
+          >
+          <a
+            href=""
+            class="group relative inline-block transition duration-300"
+          >
+            <span
+              class="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"
+            ></span
+            ><span>Review</span></a
+          >
+          <a
+            href=""
+            class="group relative inline-block transition duration-300"
+          >
+            <span
+              class="absolute left-0 -bottom-[1px] h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"
+            ></span
+            ><span>Contact</span></a
+          >
+        </nav>
+        <div class="flex gap-3">
+          <a
+            href="login.html"
+            class="rounded-md px-3 py-1 transition duration-100 bg-blue-500  hover:bg-blue-700"
+            >Login</a
+          >
+          <a
+            href="registry.html"
+            class="rounded-md px-3 py-1 transition duration-100 bg-blue-500  hover:bg-blue-700"
+            >Registry</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="w-full relative bg-cover bg-center h-[90vh] flex justify-center items-center"
+    >
+      <!-- <div
+        class="absolute inset-0 bg-[radial-gradient(80%_80%_at_50%_-20%,rgba(255,255,255,1),rgba(255,255,255,0))]"
+      ></div> -->
+      <div
+        class="absolute inset-0 bg-[url(images/home/Hero-img.jpg)] bg-fixed bg-cover bg-center -z-10"
+      ></div>
+      <div class="absolute inset-0 bg-black/50 -z-10"></div>
+      <div class="max-w-3xl rounded-lg text-center">
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4"
+        >
+          Explore the World,<br />One Trip at a Time
+        </h1>
+        <p class="text-white mb-8">
+          Discover unforgettable adventures, explore breathtaking destinations,
+          and create lifelong memories with Trip Travel&mdash;your trusted
+          partner for unique, expertly curated global travel experiences.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-10 justify-center"
+        >
+          <button
+            class="bg-blue-600 text-white px-4 sm:px-6 py-3 rounded-md hover:bg-blue-700 transition"
+          >
+            Start Your Journey
+          </button>
+          <button
+            class="flex items-center space-x-2 border border-gray-300 px-4 sm:px-6 py-3 rounded-md bg-gray-100 hover:bg-blue-200 transition"
+          >
+            <i class="fa-solid fa-play text-blue-800 text-lg"></i>
+            <span>Play Video</span>
+          </button>
+        </div>
+
+        <!-- Filter Bar -->
+        <div
+          class="bg-white rounded-lg shadow-md p-4 flex flex-col md:flex-row md:items-center md:justify-between max-w-4xl mx-auto gap-4 md:gap-0 md:space-x-4"
+        >
+          <!-- Select 1: Located in -->
+          <div class="relative w-full md:w-48">
+            <select
+              class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-gray-400 text-gray-700 appearance-none"
+              style="
+                background-image: url('data:image/svg+xml;utf8,<svg fill=\'%23000\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                background-size: 1rem;
+              "
+            >
+              <option>Located in</option>
+              <option>New York</option>
+              <option>London</option>
+              <option>Tokyo</option>
+            </select>
+
+            <span
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-lg"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+          </div>
+
+          <!-- Select 2: From-To -->
+          <div class="relative w-full md:w-48">
+            <select
+              class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-gray-400 text-gray-700 appearance-none"
+              style="
+                background-image: url('data:image/svg+xml;utf8,<svg fill=\'%23000\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                background-size: 1rem;
+              "
+            >
+              <option>From-To</option>
+              <option>Jan 2024 - Feb 2024</option>
+              <option>Mar 2024 - Apr 2024</option>
+              <option>May 2024 - Jun 2024</option>
+            </select>
+            <span
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-lg"
+            >
+              <i class="fa-regular fa-calendar"></i>
+            </span>
+          </div>
+
+          <!-- Select 3: Filter -->
+          <div class="relative w-full md:w-48">
+            <select
+              class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-gray-400 text-gray-700 appearance-none"
+              style="
+                background-image: url('data:image/svg+xml;utf8,<svg fill=\'%23000\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                background-size: 1rem;
+              "
+            >
+              <option>Filter</option>
+              <option>Adventure</option>
+              <option>Relaxation</option>
+              <option>Culture</option>
+              <option>Historical</option>
+              <option>Nature</option>
+              <option>Medical</option>
+              <option>Religious</option>
+            </select>
+            <span
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-lg"
+            >
+              <i class="fa-solid fa-sliders"></i>
+            </span>
+          </div>
+
+          <button
+            class="bg-blue-500 hover:bg-blue-600 transition rounded-md p-4 self-stretch md:self-auto w-full md:w-auto"
+          >
+            <i class="fa-solid fa-magnifying-glass text-white"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col justify-center py-32 items-center">
+        <div class="pb-16 text-center">
+          <h2 class="font-semibold text-lg text-cyan-500">
+            Wonderful Place for You
+          </h2>
+          <h1 class="font-bold text-4xl">Tour Categories</h1>
+        </div>
+
+        <div class="flex gap-10">
+          <!-- Card1 -->
+          <div
+            class="flex flex-col justify-center items-center gap-2 -translate-y-24"
+          >
+            <img
+              src="images/home/Category-Card1.jpg"
+              class="w-40 rounded-2xl"
+              alt=""
+            />
+            <h2 class="">Luxury Escapes</h2>
+          </div>
+          <!-- Card1 -->
+          <div
+            class="flex flex-col justify-center items-center gap-2 -translate-y-12"
+          >
+            <img
+              src="images/home/Category-Card1.jpg"
+              class="w-40 rounded-2xl"
+              alt=""
+            />
+            <h2 class="">Luxury Escapes</h2>
+          </div>
+          <!-- Card1 -->
+          <div class="flex flex-col justify-center items-center gap-2">
+            <img
+              src="images/home/Category-Card1.jpg"
+              class="w-40 rounded-2xl"
+              alt=""
+            />
+            <h2 class="">Luxury Escapes</h2>
+          </div>
+          <!-- Card1 -->
+          <div class="flex flex-col justify-center items-center gap-2">
+            <img
+              src="images/home/Category-Card1.jpg"
+              class="w-40 rounded-2xl"
+              alt=""
+            />
+            <h2 class="">Luxury Escapes</h2>
+          </div>
+          <!-- Card1 -->
+          <div
+            class="flex flex-col justify-center items-center gap-2 -translate-y-12"
+          >
+            <img
+              src="images/home/Category-Card1.jpg"
+              class="w-40 rounded-2xl"
+              alt=""
+            />
+            <h2 class="">Luxury Escapes</h2>
+          </div>
+          <!-- Card1 -->
+          <div
+            class="flex flex-col justify-center items-center gap-2 -translate-y-24"
+          >
+            <img
+              src="images/home/Category-Card1.jpg"
+              class="w-40 rounded-2xl"
+              alt=""
+            />
+            <h2 class="">Luxury Escapes</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col justify-center py-32 items-center">
+        <div class="pb-10 text-center">
+          <h2 class="font-semibold text-lg text-cyan-500">
+            Wonderful Place for You
+          </h2>
+          <h1 class="font-bold text-4xl">Most Popular Tour</h1>
+        </div>
+
+        <div class="flex gap-10">
+          <div
+            class="border border-cyan-500 rounded-2xl p-4 w-[420px] -translate-y-20"
+          >
+            <div class="space-y-3">
+              <img
+                src="images/home/Hero-img.jpg"
+                class="w-96 rounded-2xl"
+                alt=""
+              />
+              <h1 class="font-bold text-lg">Santorini Escape</h1>
+              <p>
+                Experience timeless romance and elegance in the iconic settings
+                of Paris,the city of Love.
+              </p>
+              <div class="flex justify-between items-center">
+                <div>7 Days,6 Nights</div>
+                <div>4.8</div>
+              </div>
+            </div>
+
+            <div class="bg-black h-[1px] w-[90%] mx-auto my-3"></div>
+            <div class="flex justify-between items-center">
+              <span>$840</span>
+              <a href="" class="bg-cyan-600 px-4 py-1 rounded-md text-white"
+                >More Details</a
+              >
+            </div>
+          </div>
+          <div class="border border-cyan-500 rounded-2xl p-4 w-[420px]">
+            <div class="space-y-3">
+              <img
+                src="images/home/Hero-img.jpg"
+                class="w-96 rounded-2xl"
+                alt=""
+              />
+              <h1 class="font-bold text-lg">Santorini Escape</h1>
+              <p>
+                Experience timeless romance and elegance in the iconic settings
+                of Paris,the city of Love.
+              </p>
+              <div class="flex justify-between items-center">
+                <div>7 Days,6 Nights</div>
+                <div>4.8</div>
+              </div>
+            </div>
+
+            <div class="bg-black h-[1px] w-[90%] mx-auto my-3"></div>
+            <div class="flex justify-between items-center">
+              <span>$840</span>
+              <a href="" class="bg-cyan-600 px-4 py-1 rounded-md text-white"
+                >More Details</a
+              >
+            </div>
+          </div>
+          <div
+            class="border border-cyan-500 rounded-2xl p-4 w-[420px] -translate-y-20"
+          >
+            <div class="space-y-3">
+              <img
+                src="images/home/Hero-img.jpg"
+                class="w-96 rounded-2xl"
+                alt=""
+              />
+              <h1 class="font-bold text-lg">Santorini Escape</h1>
+              <p>
+                Experience timeless romance and elegance in the iconic settings
+                of Paris,the city of Love.
+              </p>
+              <div class="flex justify-between items-center">
+                <div>7 Days,6 Nights</div>
+                <div>4.8</div>
+              </div>
+            </div>
+
+            <div class="bg-black h-[1px] w-[90%] mx-auto my-3"></div>
+            <div class="flex justify-between items-center">
+              <span>$840</span>
+              <a href="" class="bg-cyan-600 px-4 py-1 rounded-md text-white"
+                >More Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <!-- Big wrapper div -->
+      <div
+        class="flex flex-col md:flex-row items-center md:items-start gap-8 w-full"
+      >
+        <div
+          class="flex flex-wrap gap-6 items-stretch justify-center md:justify-start w-full md:w-auto"
+        >
+          <!-- First image + badge -->
+          <div
+            class="relative flex-col flex-shrink-0 flex max-w-full md:max-w-none"
+          >
+            <img
+              src="images/home/About-img1.jpg"
+              class="w-full max-w-md h-64 md:h-64 object-cover rounded-xl"
+            />
+
+            <div
+              class="mt-5 bg-blue-400 text-white rounded-lg px-5 py-3 flex items-center gap-3 shadow-lg max-w-md"
+            >
+              <i class="fas fa-award text-white text-xl"></i>
+              <span class="text-sm font-semibold">25 Years Of Experiences</span>
+            </div>
+          </div>
+
+          <!-- Second image -->
+          <div class="flex-shrink-0 flex max-w-full md:max-w-none">
+            <img
+              src="images/home/About-img2.jpg"
+              class="max-w-full h-auto md:h-full md:w-48 object-cover rounded-xl"
+            />
+          </div>
+        </div>
+
+        <!-- Right side content -->
+        <div class="flex-1 flex flex-col gap-3 w-full">
+          <p class="text-blue-400 text-sm font-semibold italic">
+            About Company
+          </p>
+          <h2
+            class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight"
+          >
+            Great Opportunity for
+            <br />Adventure & Travels
+          </h2>
+          <p class="text-gray-600 max-w-xl">
+            Embark on a journey filled with breathtaking landscapes, thrilling
+            experiences, and unforgettable memories. Whether you're an explorer
+            or a leisure traveler, this is the perfect opportunity to discover
+            the world's wonders.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <div class="flex items-center gap-3 flex-1">
+              <i class="fas fa-map-marked-alt text-blue-400 text-3xl"></i>
+              <div>
+                <h3 class="font-semibold text-gray-900">
+                  Trusted travel guide
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Discover the world with a guide you can trust.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 flex-1">
+              <i class="fas fa-bullseye text-blue-400 text-3xl"></i>
+              <div>
+                <h3 class="font-semibold text-gray-900">Mission & Vision</h3>
+                <p class="text-gray-600 text-sm">
+                  Discover the world with a guide you can trust.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4">
+            <button
+              class="bg-blue-400 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+            >
+              Start Your Journey
+            </button>
+            <div class="flex items-center gap-3">
+              <img
+                src="images/home/About-img2.jpg"
+                class="w-10 h-10 rounded-full object-cover"
+              />
+              <div>
+                <p class="text-gray-900 font-semibold text-sm">Albert Flores</p>
+                <p class="text-gray-500 text-xs">Co Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </section>
+    <footer class="bg-[#02161A] text-white">
+      <!-- Top Info Bar -->
+      <div
+        class="flex flex-wrap justify-between items-center gap-6 text-center md:text-left py-8 border-b border-gray-600 max-w-6xl mx-auto px-4"
+      >
+        <img src="images/home/Daleel-Logo.png" alt="Logo" class="mb-4 w-28" />
+
+        <div class="flex items-center justify-center md:justify-start gap-3">
+          <div class="bg-white/10 p-3 rounded-md">
+            <i class="fa-solid fa-phone text-cyan-400 text-xl"></i>
+          </div>
+          <div>
+            <p class="font-semibold">Call Agent</p>
+            <p class="text-sm text-gray-300">(123) 456-7890</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3">
+          <div class="bg-white/10 p-3 rounded-md">
+            <i class="fa-solid fa-envelope text-cyan-400 text-xl"></i>
+          </div>
+          <div>
+            <p class="font-semibold">Send Email</p>
+            <p class="text-sm text-gray-300">info@skillcraft.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center md:justify-end gap-3">
+          <div class="bg-white/10 p-3 rounded-md">
+            <i class="fa-solid fa-clock text-cyan-400 text-xl"></i>
+          </div>
+          <div>
+            <p class="font-semibold">Opening Time</p>
+            <p class="text-sm text-gray-300">Mon–Fri: 8am – 7pm</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer -->
+      <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-10">
+        <!-- About -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">About Us</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="bg-white/10 p-2 rounded-md hover:bg-cyan-500">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="bg-white/10 p-2 rounded-md hover:bg-cyan-500">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="bg-white/10 p-2 rounded-md hover:bg-cyan-500">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="bg-white/10 p-2 rounded-md hover:bg-cyan-500">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Destinations -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Destinations</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>South America</li>
+            <li>Middle East</li>
+            <li>San Franc Rica</li>
+            <li>New York</li>
+            <li>Tokyo</li>
+          </ul>
+        </div>
+
+        <!-- Useful Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Useful Links</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>About Us</li>
+            <li>Destination</li>
+            <li>News & Blog</li>
+            <li>Meet the Guide</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="font-semibold text-lg mb-3">Newsletter</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Enter your email address to register to our newsletter subscription
+          </p>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Enter mail"
+              class="w-full px-3 py-2 rounded-l-md text-black outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-cyan-500 px-4 py-2 rounded-r-md text-white font-semibold"
+            >
+              Subscribe
+            </button>
+          </form>
+          <div class="flex items-center gap-2 mt-3 text-gray-400 text-sm">
+            <input type="checkbox" />
+            <span
+              >I agree to the
+              <a href="#" class="text-cyan-400">Privacy Policy</a></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="bg-[#04252E] py-4">
+        <div
+          class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-3"
+        >
+          <p>Copyright © 2025 SkillCraft All Rights Reserved.</p>
+          <div class="flex gap-3">
+            <img src="images/payment/discover.png" class="h-6" />
+            <img src="images/payment/paypal.png" class="h-6" />
+            <img src="images/payment/mastercard.png" class="h-6" />
+            <img src="images/payment/amex.png" class="h-6" />
+            <img src="images/payment/visa.png" class="h-6" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
