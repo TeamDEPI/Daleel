@@ -102,10 +102,12 @@
   background-color: #f8f9fa;
 }
 
+.see-more-card {
+  transition: 0.3s ease;
+}
 .see-more-card:hover {
   transform: scale(1.02);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: 0.3s ease;
 }
 
 @media (max-width: 640px) {
@@ -369,3 +371,4 @@
   width: 16px;
   height: 16px;
 }
+
